@@ -1,5 +1,5 @@
 {
-    "name": "codica-studio/avatar",
+    "name": "codicastudio/avatar",
     "description": "A random Codica Studio package.",
 
     "homepage": "https://github.com/codicastudio/avatar",
@@ -45,5 +45,7 @@
                 "Avatar": "Laravolt\\Avatar\\Facade"
             }
         }
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
