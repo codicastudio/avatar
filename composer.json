@@ -34,9 +34,6 @@
         "test": "phpunit"
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "5.0-dev"
-        },
         "laravel": {
             "providers": [
                 "Laravolt\\Avatar\\ServiceProvider"
