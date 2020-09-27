@@ -318,7 +318,7 @@ class AvatarPhpTest extends \PHPUnit\Framework\TestCase
         $avatar = new \Laravolt\Avatar\Avatar();
         $url = $avatar
             ->setDimension(null)
-            ->create('uyab.exe@gmail.com')
+            ->create('maintenance@codicastudio.com')
             ->toGravatar();
 
         $this->assertEquals($expected, $url);
@@ -332,7 +332,7 @@ class AvatarPhpTest extends \PHPUnit\Framework\TestCase
         $expected = 'https://www.gravatar.com/avatar/0dcae7d6d76f9a3b14588e9671c45879?s=100';
 
         $avatar = new \Laravolt\Avatar\Avatar();
-        $url = $avatar->create('uyab.exe@gmail.com')
+        $url = $avatar->create('maintenance@codicastudio.com')
             ->setDimension(100)
             ->toGravatar();
 
@@ -347,7 +347,7 @@ class AvatarPhpTest extends \PHPUnit\Framework\TestCase
         $expected = 'https://www.gravatar.com/avatar/0dcae7d6d76f9a3b14588e9671c45879?d=identicon&s=100';
 
         $avatar = new \Laravolt\Avatar\Avatar();
-        $url = $avatar->create('uyab.exe@gmail.com')
+        $url = $avatar->create('maintenance@codicastudio.com')
             ->setDimension(100)
             ->toGravatar(['d' => 'identicon']);
 
@@ -362,7 +362,7 @@ class AvatarPhpTest extends \PHPUnit\Framework\TestCase
         $expected = 'https://www.gravatar.com/avatar/0dcae7d6d76f9a3b14588e9671c45879?d=identicon&r=pg&s=100';
 
         $avatar = new \Laravolt\Avatar\Avatar();
-        $url = $avatar->create('uyab.exe@gmail.com')
+        $url = $avatar->create('maintenance@codicastudio.com')
             ->setDimension(100)
             ->toGravatar(['d' => 'identicon', 'r' => 'pg']);
 
@@ -377,7 +377,7 @@ class AvatarPhpTest extends \PHPUnit\Framework\TestCase
         $expected = 'https://www.gravatar.com/avatar/0dcae7d6d76f9a3b14588e9671c45879?s=300';
 
         $avatar = new \Laravolt\Avatar\Avatar();
-        $url = $avatar->create('uyab.exe@gmail.com')
+        $url = $avatar->create('maintenance@codicastudio.com')
             ->setDimension(100)
             ->toGravatar(['s' => 300]);
 

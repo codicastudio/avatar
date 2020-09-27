@@ -50,7 +50,7 @@ class DefaultGenerator implements GeneratorInterface
         }
 
         if (filter_var($name, FILTER_VALIDATE_EMAIL)) {
-            // turn bayu.hendra@gmail.com into "Bayu Hendra"
+            // turn into "Bayu Hendra"
             $name = str_replace('.', ' ', Str::before($name, '@'));
         }
 
